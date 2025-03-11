@@ -1,15 +1,16 @@
 {
   "name": "kt3_reactrouting",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "homepage": "https://azamathot.github.io/KT3_ReactRouting/",
   "scripts": {
+    "start": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "deploy": "gh-pages -d dist",
 
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
