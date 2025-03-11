@@ -4,6 +4,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //npm install react - router - dom
+import {createHashRouter, RouterProvider} from 'react-router-dom'
+
 import ProductsList from "./components/ProductsList";
 import ProductDetail from "./components/ProductDetail";
 import NotFoundPage from "./components/NotFoundPage";
@@ -22,8 +24,17 @@ const App = () => {
     );
 };
 
+const router = createHashRouter([
+    {
+       path: '/*',
+       element: <App/>
+     }
+    ]);
+    
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+// root.render(<App />);
+root.render(<RouterProvider router={router}/>);
+   
 
 
 //function App() {

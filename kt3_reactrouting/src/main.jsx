@@ -17,7 +17,7 @@ import "./styles.css";
 
 const rootElement = document.getElementById("root");
 
-// Проверяем, создавали ли уже root
+// РџСЂРѕРІРµСЂСЏРµРј, СЃРѕР·РґР°РІР°Р»Рё Р»Рё СѓР¶Рµ root
 if (!rootElement._reactRootContainer) {
     const root = ReactDOM.createRoot(rootElement);
     root.render(

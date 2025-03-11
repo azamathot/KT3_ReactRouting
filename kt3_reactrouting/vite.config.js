@@ -7,5 +7,5 @@ export default defineConfig({
     server: {
         port: 56147,
     },
-    base: "/KT3_ReactRouting/"  // Укажите имя вашего репозитория
+    base: "/KT3_ReactRouting/"  // РЈРєР°Р¶РёС‚Рµ РёРјСЏ РІР°С€РµРіРѕ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ
 })
